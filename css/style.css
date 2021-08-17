@@ -1,0 +1,331 @@
+
+
+ body{
+    box-sizing: border-box;
+    height: 100%;
+    width: 90%;
+    margin: 2em auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #000;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+   
+}
+/*navbar*/
+
+nav{
+    background-color: #000;
+    display: inline-block;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    
+}
+
+ul li{
+    padding: 20px; 
+    display: inline-block;
+    
+
+}
+.menu{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 0;
+
+}
+/*welcome*/
+#welcome-section{
+    padding: 45px;
+    background-color: rgb(236, 202, 107);
+    text-align: center;
+  /*min-height:100vh;*/
+    
+}
+#pareja{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+img{
+    max-width: 100%;
+}
+
+#grupo-intro{
+     width: 40%;
+}
+#intro{
+    font-size: 3vw;
+    padding: 8px;
+}
+
+.subintro{
+    font-size: 2vw;
+    padding: 8px;
+   
+}
+/*projects*/
+#projects{
+    padding: 20px;
+    padding-bottom: 25px;
+   
+    margin-top: 0;
+    background-color: rgb(182, 181, 143);
+    text-align: center;
+   
+    
+}
+.iluminado:hover{
+
+    box-shadow: 0 10px 20px rgba(247, 247, 247, 0.644), 0 6px 6px rgba(223, 213, 213, 0.23);
+
+
+}
+#project-group{
+     margin-left: 30px;
+    margin-right: 30px;
+   /* width:80%;*/
+    display: flex;    
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+/*profile*/
+#profile{
+    padding: 20px;
+    padding-bottom: 30px;
+    margin-top: 0;
+    background-color: rgb(215, 219, 202);
+    text-align: center;
+
+    
+}
+#profile-link{
+    color: #000;
+    font-size: 1vw;
+
+}
+footer{
+    background-color: #000;
+    text-align: center;
+    color: rgb(236, 202, 107);;
+}
+
+h1{
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-size: 3vw;
+   font-weight: 900; 
+   margin-top: 0.2;
+}
+h2{
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-size: 2vw;
+   font-weight: 800; 
+}
+.menu{
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-size: 2vw;
+   font-weight: 700; 
+   color: rgb(236, 202, 107);;
+   text-shadow: 1px 1px #666, 2px 2px #86D6D3, 3px 3px #666, 4px 4px #86D6D3;
+
+}
+.menu:hover{
+    text-shadow: 1px 1px rgb(158, 154, 154), 2px 2px #94c5c3, 3px 3px rgb(102, 76, 76), 4px 4px #16678d;
+    
+}
+/*RESPONSIVE WELCOME SECTION SAME HEIGHT OF THE VIEWPORT*/
+/*kindle*/
+@media(max-width:992px){
+    #project-group{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    h2{
+        font-size: 2.5vw;
+    }
+    #profile-link{
+
+        font-size: 2vw;
+    }
+}
+/* iPad*/
+@media(max-width:768px){
+    .menu{
+        font-size: 3vw;
+    }
+
+    ul li{
+        padding-left: 0;
+
+     }
+     #welcome-section{
+         padding: 45px;
+         padding-bottom: 85px;
+     }
+
+     #grupo-intro{
+        width: 60%;
+       padding-top: 50px;
+       margin-top: 0;
+   }
+   #pareja{
+       margin-left: 20px;
+   }
+   #grupo-intro{
+       padding: 0;
+   }
+   #intro{
+    font-size: 4vw;
+    padding: 8px;
+    }
+
+    .subintro{
+        font-size: 2.5vw;
+        padding: 8px;
+   
+    }
+    #project-group{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+    }
+    h1{
+        font-size: 4vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    #profile-link{
+        color: #000;
+        font-size: 2vw;
+    
+    }
+    
+}
+
+@media (max-width:576px) {
+
+    #pareja{
+        display: flex;
+       flex-direction: column; 
+    }
+     .menu{
+         font-size: 4vw;
+     }
+
+     ul li{
+        padding-left: 0;
+
+     }
+
+     #intro{
+        font-size: 5vw;
+        padding: 0;
+    }
+    
+    .subintro{
+        font-size: 4vw;
+        padding: 0;
+       
+    }
+    #welcome-section{
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    #pareja{
+        margin-left: 5px;
+    }
+    #project-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 5.2vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    #profile-link{
+        color: #000;
+        font-size: 3vw;
+    
+    }
+    
+}
+
+@media (max-width:375px) {
+
+    #pareja{
+        display: flex;
+       flex-direction: column; 
+    }
+     .menu{
+         font-size: 4vw;
+     }
+
+     ul li{
+        padding-left: 0;
+
+     }
+     #welcome-section{
+         margin-bottom: 0;
+         padding-top: 20px;
+         padding-bottom: 20px;
+     }
+     #grupo-intro{
+        
+       padding-top:0px;
+       margin-top: 0;
+       margin-bottom: 0;
+       padding-bottom: 0;
+     
+   }
+     #intro{
+        font-size: 5vw;
+        padding: 3px;
+    }
+    
+    .subintro{
+        font-size: 4vw;
+        padding: 0;
+        padding-bottom: 0;
+       
+       
+    }
+    #pareja{
+        margin-left: 4px;
+    }
+    #project-group{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 5.5vw;
+        margin-top: 0;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    #profile-link{
+        color: #000;
+        font-size: 3vw;
+    
+    }
+}
+
+
+

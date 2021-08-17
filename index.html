@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/Mamen4.png"/>
+    <title>MY PORTFOLIO</title>
+</head>
+<body>
+    <!--_________________NAVBAR______STICKY AT THE TOP__________-->
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome" class="menu">Welcome</a></li>
+            <li><a href="#projects" class="menu">Projects</a></li>
+            <li><a href="#profile" class="menu">Profile</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!--_________________WELCOME_____SAME HEIGHT OF THE VIEWPORT________-->
+    <div id="welcome-section">
+        <h1>Welcome</h1>
+        <div id="pareja">
+            <div>
+                <img src="images/Mamen4.png" alt="Mamen">
+
+            </div>
+            <div id="grupo-intro">
+                <p id="intro">I'm Mamen. </p>
+                <p class="subintro">I love codding, painting and whatever related to art in some way.</p>
+                <p class="subintro">Browse through these sections so you can see some of my projects.</p>
+                <p class="subintro">Enjoy!!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--________________PROJECTS____________________-->
+    <div id="projects">
+        <h2>My projects</h2>
+        <div id="project-group">
+        <div class="project-tile">
+            <figure >
+            <a href="art-galery.html" target="_blank"><img src="images/icono-galeria.png" alt="" class="iluminado"></a>
+            <figcaption>Art galery</figcaption>
+            </figure>
+        </div>
+        <div class="project-tile">
+            <figure >
+            <a href="market.html" target="_blank"><img src="images/icono-market.png" alt="" class="iluminado"></a>
+            <figcaption>Mock Market</figcaption>
+            </figure>
+        </div>
+        <div class="project-tile">
+            <figure >
+          <a href="clothing-store.html" target="_blank"><img src="images/icono-dress.png" alt="" class="iluminado"></a>
+          <figcaption>Clothing Store</figcaption>
+          </figure>
+        </div>
+        <div class="project-tile">
+            <figure >
+            <a href="newspaper.html" target="_blank"><img src="images/icono-prensa.png" alt="" class="iluminado"></a>
+            <figcaption>Newspaper</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+    <!--________________PROFILE_____________________-->
+
+
+    <div id="profile">
+        <h2>My profile</h2>
+        <a href="https://github.com/Amapola-Negra" id="profile-link" target="_blank">See my profile in Github.</a>
+    </div>
+
+
+
+</body>
+ <script type="text/javascript">
+$(document).ready(function(){
+    var height = $(window).height();
+    $('#welcome').height(height);
+});
+
+
+</script> 
+<footer>
+    <p>&COPY; Mamen 2021</p>
+</footer>
+</html>

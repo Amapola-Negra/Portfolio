@@ -1,0 +1,845 @@
+/*__________________________________PREAMBLE______________________________*/
+body{
+    box-sizing: border-box;
+    height: 100%;
+    width: 90%;
+    margin: 2em auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color:rgba(22, 22, 22, 0.637); 
+    font-family:'Lucida Handwriting',serif, Georgia, 'Times New Roman', Times;
+   
+}
+main{
+    background-color: aliceblue;
+    
+}
+h1{
+    font-size: 3em;
+    text-shadow: 1px 1px white, -1px -1px #333;
+    margin-left: 40px;
+
+}
+
+h2{
+    font-size: 2.6em;
+    text-align: center;
+    padding: 40px;
+}
+h3{
+    padding: 40px;
+}
+img{
+    max-width:100%;
+}
+/*____________________________________________HEADER_____________________________________*/
+header{
+    display: flex;
+    align-items: center;
+
+    padding: 20px;
+    gap:150px;
+    background-color: cornflowerblue;
+    color: #fff;
+    
+}
+
+#navbar{
+
+justify-content: space-around;
+     
+}
+ul li{
+    display: inline-block;
+        
+}
+
+a{
+    padding: 20px;
+    
+   background-color:rgba(22, 22, 22, 0.637);
+    color:#fff;
+    text-decoration: none;
+    border:3px double aliceblue;
+  
+    border-width: 0.3em;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+a:hover{
+    background-color: dimgray;
+
+}
+/*________________________________________HOME_____________________________________*/
+#home{
+    padding-bottom:154px;
+    margin-left:15%;
+    margin-right: 15%;
+    display: flex;
+    flex-flow: row;
+    gap:45px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+#home-texts{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    font-size: 1.5em;
+    line-height: 2.4rem;
+   
+    width: 50%;
+    
+    color: aliceblue;
+}
+.home-text-item{
+    border-radius: 10px; 
+    padding: 20px;
+}
+#home-text-1{  
+    background-color: dimgray;
+}
+#home-text-2{
+    background-color:cornflowerblue;
+}
+#home-text-3{
+    background-color:lightslategray;
+}
+/*_________________________________________BUY__________________________________________*/
+#buy{
+    padding-bottom:154px;
+    margin-left:5%;
+    margin-right: 5%;
+    display: flex;
+    flex-flow: row;
+    gap:200px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+#buy-text{
+    padding: 75px;
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: dimgray;
+    color: aliceblue;
+    font-size: 1.5em;
+    line-height: 2.4rem;
+    text-align: center;
+}
+/*_____________________________________________SHARE___________________________________________________________*/
+#share{
+    padding-bottom:154px;
+    margin-left:5%;
+    margin-right: 5%;
+    display: flex;
+    flex-flow: row;
+    gap:200px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+#share-text{
+    padding: 75px;
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+
+    background-color:cornflowerblue;
+    color: aliceblue;
+    font-size: 1.5em;
+    line-height: 2.4rem;
+    text-align: center;
+}
+/*_______________________________________________ACCOUNT_____________________________________________*/
+#account{
+    display: flex;
+    gap: 60px;
+    
+    background-color:lightslategray;
+    padding-bottom:154px;
+    align-content: center;
+   
+    justify-content: center;
+    text-align: left;
+    color: #fff;
+}
+
+.form-account{
+    display: block;
+}
+.form-label{
+    padding:2px;
+    padding-right:0;
+    font-size: 1em;
+
+}
+
+.form-input-account{
+    margin:2.5px;
+    padding: 4px;
+    background-color: aliceblue;
+
+}
+
+.form-button{
+    padding:15px;
+    margin: 6px;
+    margin-top: 15px;
+   width: 100%;
+   background-color:dimgray;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.16), 0 6px 6px rgba(0,0,0,0.20);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+   cursor: pointer;
+
+}
+
+
+.form-button:hover{
+    background-color:cornflowerblue;
+}
+/*________________________________________________________CONTACT_______________________________*/
+#contact{
+    display: flex;
+    gap: 60px;
+    padding-bottom:154px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.contact-form{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding:20px;
+}
+.form-label-contact{
+    padding:5px;
+    padding-right:0;
+
+    font-size: 1em;
+
+}
+.form-input-contact{
+    margin:2.5px;
+    padding: 6px;
+    width: 450px;
+    font-size: 1em;
+    background-color: grey;
+    color: aliceblue;
+
+
+}
+#boton-contacto{
+    display: flex;
+}
+.form-button-reset{
+    padding:15px;
+    margin: 6px;
+    margin-top: 15px;
+   width: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.16), 0 6px 6px rgba(0,0,0,0.20);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+   cursor: pointer;
+    background-color: #000;
+}
+p{
+    text-align: center;
+}
+textarea{
+    color:dimgray;   
+    height: 213px;
+}
+/*________________________________FOOTER_______________________________________________________________*/
+footer{
+    color:aliceblue;
+    text-align: center;
+}
+/*______________________________________________RESPONSIVE DESIGN_____________________________________*/
+@media(max-width:800px){
+    body{
+        width:100%;
+    }
+    header{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    h1{
+        margin-left: 0;
+    }
+    #navbar{
+        margin:0;
+        padding: 10px;
+        
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    #menu{
+        margin-left: 0;
+        padding-left: 22px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+             
+        }
+        a{
+            background-color:rgba(22, 22, 22, 0.637);
+                     
+        }
+        
+    
+    #nav-home{
+
+        margin-bottom: 30px;
+    }
+    #nav-buy{
+
+        margin-bottom: 30px;
+    }
+    #nav-share{
+
+        margin-bottom: 30px;
+    }
+    #home{
+        display: flex;
+        flex-flow: column;
+        margin: 10px;
+        padding:0;
+    }
+    #home-texts{
+        width: 95%;
+    }
+    #buy{
+        display: flex;
+        flex-flow: column;
+    }
+    #buy-text{
+        padding: 75px;    
+        width: 300px;
+        height: 300px;
+        font-size: 1.5em;
+       
+    }
+    #share{
+        display: flex;
+        flex-flow: column;
+    }
+    #share-text{
+        padding: 75px;    
+        width: 300px;
+        height: 300px;
+        font-size: 1.5em;
+    }
+    #account{
+        
+        display: flex;
+        flex-flow: column;
+    }
+    .form-account{
+        padding: 15px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-size: 1.1em;
+    }
+    #contact{
+        padding: 20px;
+        display: flex;
+        flex-flow: column;
+    }
+    .form-input-contact{
+        width:300px;
+    }
+    .contact-form{
+        font-size: 1.1em;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+    #form-contact{
+        font-size: 1.2em;
+   }
+ 
+}
+@media(max-width:768px){
+    body{
+        width:100%;
+    }
+    header{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    h1{
+        margin-left: 0;
+    }
+    #navbar{
+        margin:0;
+        padding: 10px;
+        
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    #menu{
+        margin-left: 0;
+        padding-left: 22px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+             
+        }
+        a{
+            background-color:rgba(22, 22, 22, 0.637);
+                     
+        }
+        
+    
+    #nav-home{
+
+        margin-bottom: 30px;
+    }
+    #nav-buy{
+
+        margin-bottom: 30px;
+    }
+    #nav-share{
+
+        margin-bottom: 30px;
+    }
+    #home{
+        display: flex;
+        flex-flow: column;
+        margin: 10px;
+        padding:0;
+    }
+    #home-texts{
+        width: 95%;
+    }
+    #buy{
+        display: flex;
+        flex-flow: column;
+    }
+    #buy-text{
+        padding: 75px;    
+        width: 300px;
+        height: 300px;
+        font-size: 1.5em;
+       
+    }
+    #share{
+        display: flex;
+        flex-flow: column;
+    }
+    #share-text{
+        padding: 75px;    
+        width: 300px;
+        height: 300px;
+        font-size: 1.5em;
+    }
+    #account{
+        
+        display: flex;
+        flex-flow: column;
+    }
+    .form-account{
+        padding: 15px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-size: 1.1em;
+    }
+    #contact{
+        padding: 20px;
+        display: flex;
+        flex-flow: column;
+    }
+    .form-input-contact{
+        width:300px;
+    }
+    .contact-form{
+        font-size: 1.1em;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+    #form-contact{
+        font-size: 1.2em;
+   }
+ 
+}
+@media(max-width:414px){
+    body{
+        width:100%;
+    }
+    header{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    h1{
+        margin-left: 0;
+    }
+    #navbar{
+        margin:0;
+        padding: 10px;
+        background-color:rgba(22, 22, 22, 0.637);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    #menu{
+        margin-left: 0;
+        padding-left: 22px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+             
+        }
+        a{
+            background-color:rgba(22, 22, 22, 0);
+            border:none;           
+        }
+        
+    
+    #nav-home{
+
+        margin-bottom: 30px;
+    }
+    #nav-buy{
+
+        margin-bottom: 30px;
+    }
+    #nav-share{
+
+        margin-bottom: 30px;
+    }
+    #home{
+        display: flex;
+        flex-flow: column;
+        margin: 10px;
+        padding:0;
+    }
+    #home-texts{
+        width: 95%;
+    }
+    #buy{
+        display: flex;
+        flex-flow: column;
+    }
+    #buy-text{
+         padding: 62px;
+        width:200px;
+        height: 250px;
+        font-size: 1.1em;
+       
+    }
+    #share{
+        display: flex;
+        flex-flow: column;
+    }
+    #share-text{
+        padding: 62px;
+        width:200px;
+        height: 250px;
+        font-size: 1.1em;
+    }
+    #account{
+        
+        display: flex;
+        flex-flow: column;
+    }
+    .form-account{
+        padding: 35px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-size: 1.2em;
+    }
+    #contact{
+        padding: 30px;
+        display: flex;
+        flex-flow: column;
+    }
+    .form-input-contact{
+        width:300px;
+    }
+    .contact-form{
+       
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    #form-contact{
+         font-size: 1.2em;
+    }
+ 
+}
+@media(max-width:375px){
+    body{
+        width:100%;
+    }
+    header{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    h1{
+        margin-left: 0;
+    }
+    #navbar{
+        margin:0;
+        padding: 10px;
+        background-color:rgba(22, 22, 22, 0.637);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    #menu{
+        margin-left: 0;
+        padding-left: 22px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+             
+        }
+        a{
+            background-color:rgba(22, 22, 22, 0);
+            border:none;           
+        }
+        
+    
+    #nav-home{
+
+        margin-bottom: 30px;
+    }
+    #nav-buy{
+
+        margin-bottom: 30px;
+    }
+    #nav-share{
+
+        margin-bottom: 30px;
+    }
+    #home{
+        display: flex;
+        flex-flow: column;
+        margin: 10px;
+        padding:0;
+    }
+    #home-texts{
+        width: 95%;
+    }
+    #buy{
+        display: flex;
+        flex-flow: column;
+    }
+    #buy-text{
+         padding: 62px;
+        width:200px;
+        height: 250px;
+        font-size: 1.1em;
+       
+    }
+    #share{
+        display: flex;
+        flex-flow: column;
+    }
+    #share-text{
+        padding: 62px;
+        width:200px;
+        height: 250px;
+        font-size: 1.1em;
+    }
+    #account{
+        
+        display: flex;
+        flex-flow: column;
+    }
+    .form-account{
+        padding: 25px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-size: 1.1em;
+    }
+    #contact{
+        padding: 30px;
+        display: flex;
+        flex-flow: column;
+    }
+    .form-input-contact{
+        width:200px;
+    }
+    .contact-form{
+        font-size: 1.1em;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    #form-contact{
+        font-size: 1.2em;
+   }
+ 
+}
+@media(max-width:360px){
+    body{
+        width:100%;
+    }
+    header{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    h1{
+        margin-left: 0;
+    }
+    #navbar{
+        margin:0;
+        padding: 10px;
+        background-color:rgba(22, 22, 22, 0.637);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    #menu{
+        margin-left: 0;
+        padding-left: 22px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+             
+        }
+        a{
+            background-color:rgba(22, 22, 22, 0);
+            border:none;           
+        }
+        
+    
+    #nav-home{
+
+        margin-bottom: 30px;
+    }
+    #nav-buy{
+
+        margin-bottom: 30px;
+    }
+    #nav-share{
+
+        margin-bottom: 30px;
+    }
+    #home{
+        display: flex;
+        flex-flow: column;
+        margin: 10px;
+        padding:0;
+    }
+    #home-texts{
+        width: 95%;
+    }
+    #buy{
+        display: flex;
+        flex-flow: column;
+    }
+    #buy-text{
+         padding: 62px;
+        width:200px;
+        height: 250px;
+        font-size: 1.1em;
+       
+    }
+    #share{
+        display: flex;
+        flex-flow: column;
+    }
+    #share-text{
+        padding: 62px;
+        width:200px;
+        height: 250px;
+        font-size: 1.1em;
+    }
+    #account{
+        
+        display: flex;
+        flex-flow: column;
+    }
+    .form-account{
+        padding: 15px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-size: 1.1em;
+    }
+    #contact{
+        padding: 30px;
+        display: flex;
+        flex-flow: column;
+    }
+    .form-input-contact{
+        width:200px;
+    }
+    .contact-form{
+        font-size: 1.1em;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    #form-contact{
+        font-size: 1.2em;
+   }
+ 
+}

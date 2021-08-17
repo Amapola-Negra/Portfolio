@@ -1,0 +1,418 @@
+
+/*________________________PREÁMBULOS____________________________*/
+body{
+    box-sizing: border-box;
+    height: 100%;
+    width: 80%;
+    margin: 2em auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: mintcream;
+    font-family:'Franklin Gothic Book',serif, Georgia, 'Times New Roman', Times;
+   
+}
+h1{
+    font-size: 5em;
+    font-weight: 900;
+}
+h2{
+    font-size: 3.5em;
+    font-weight: 800;
+    text-align: center;
+}
+h3{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+h4{
+    font-size: 1.9em;
+    text-decoration: underline;
+}
+#linea{
+    width:100%;
+    height: 10px;
+    background-color:rgb(18, 18, 63);
+}
+img{
+    max-width: 100%;
+    max-height: auto;
+}
+.img-columna{
+    width:70%;
+    padding-left: 25px;
+}
+/*____________________________DISPOSICIÓN___________________________*/
+main{
+    background-color: #fff;
+    padding: 25px;
+    display: grid;
+    gap:55px;
+    grid-template-columns: 15% auto;
+    grid-template-areas: "header header"
+    "columna central";
+}
+/* _____________________________________HEADER Y NAVEGACIÓN__________________________*/
+#header{
+    grid-area: header;
+    background-color:#fff;
+    color: #000;
+    text-align: center;
+    position: sticky;
+    top: 0;
+
+    
+}
+
+
+#navbar{
+    background-color: slategray;
+    padding: 10px;
+
+    padding-bottom: 0.5px;
+   
+}
+ul li{
+    display: inline-block;
+   
+    
+}
+a{
+    color: white;  
+    text-decoration: none;
+    align-items: center;
+    padding: 10px;
+}
+a:hover{
+    color: rgb(229, 250, 240);;
+}
+
+#central{
+    grid-area: central;
+    display: flex;
+    flex-flow: column;
+    
+}
+#noticias{
+    padding: 20px;
+    display: grid;
+    flex-flow: column;
+    gap: 15px;
+    grid-template-columns: 30% 30% 30%;
+}
+#portada{  
+    display: grid;
+    gap:15px;
+    grid-template-columns: 50% auto;
+     padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+p{
+    text-align: justify;
+}
+
+#columna{
+    grid-area: columna;
+
+}
+
+#footer{
+    background-color:rgb(18, 18, 63);
+    color: mintcream;
+    padding: 20px;
+    text-align: center;   
+}
+
+/*_________________________________RESPONSIVE DESIGN__________________________________*/
+@media (max-width:1440px){
+    body{
+        width:100%
+    }
+    h3{
+        font-size: 2.3em;
+    }
+}
+@media (max-width:800px){
+   body{
+       width:100%
+   }
+   
+    main{
+        display: flex;
+        flex-flow:column;
+    }
+    ul{
+        padding-left: 0;
+    }
+    #portada{
+        display: flex;
+        flex-flow: column;
+    }
+    #noticias{
+        display: flex;
+        flex-flow: column;
+    }
+    .noticia{
+        display: grid;
+        gap:20px;
+        grid-template-columns: 50% 50%;
+      
+        justify-items: center;
+    }
+    .inverso{
+        grid-template-areas: "imagen texto";
+    }
+    .texto-inverso{
+        grid-area: texto;
+    }
+    .imagen-inverso{
+        grid-area: imagen;
+    }
+    #columna{
+        display: grid;
+        gap: 20px;
+        grid-template-areas: "weather covid" "health finance";
+    }
+    #weather{
+        grid-area: weather;
+    }
+    #covid{
+        grid-area:covid;
+    }
+    #health{
+        grid-area: health;
+    }
+    #finance{
+        grid-area: finance;
+    }
+    .img-columna{
+        width:50%;
+        padding-left: 90px;
+    }
+    .img-noticias{
+        margin-top: 20px;
+        width:96%;
+       
+    }
+}
+@media (max-width:768px){
+    ul{
+        padding-left: 0;
+    }
+   
+     main{
+         display: flex;
+         flex-flow:column;
+     }
+     #portada{
+         display: flex;
+         flex-flow: column;
+     }
+     #noticias{
+         display: flex;
+         flex-flow: column;
+     }
+     .noticia{
+         display: grid;
+         gap:20px;
+         grid-template-columns: 50% 50%;
+       
+         justify-items: center;
+     }
+     .inverso{
+         grid-template-areas: "imagen texto";
+     }
+     .texto-inverso{
+         grid-area: texto;
+     }
+     .imagen-inverso{
+         grid-area: imagen;
+     }
+     #columna{
+         display: grid;
+         gap: 20px;
+         grid-template-areas: "weather covid" "health finance";
+     }
+     #weather{
+         grid-area: weather;
+     }
+     #covid{
+         grid-area:covid;
+     }
+     #health{
+         grid-area: health;
+     }
+     #finance{
+         grid-area: finance;
+     }
+     .img-columna{
+         width:50%;
+         padding-left: 90px;
+     }
+     .img-noticias{
+         margin-top: 20px;
+         width:96%;
+        
+     }
+ }
+ @media (max-width:414px){
+    h1{
+        font-size: 2em;
+    }
+    h2{
+     font-size: 1.6em;
+    }
+    h3{
+        font-size: 1.4em;
+    }
+    h4{
+        font-size: 1.2em;
+    }
+    .img-columna{
+         width:100%;
+         height:100%;
+         padding-left: 0;
+     }
+     #columna{
+         display: flex;
+         flex-flow: column;
+     }
+    .col-item{
+        display: flex;
+        gap:20px;
+        align-items:center;
+        justify-content: center;
+ 
+    }
+    
+    .noticia{
+        display: flex;
+ 
+        flex-flow: column;
+    }
+     #navbar{
+         display: flex;
+         justify-content:center;
+     }
+     ul{
+         padding-left: 0;
+     }
+     main{
+         display: flex;
+         flex-flow:column;
+     }
+     #portada{
+         display: flex;
+         flex-flow: column;
+     }
+     #noticias{
+         display: flex;
+         flex-flow: column;
+     }
+ }
+@media (max-width:375px){
+   h1{
+       font-size: 2em;
+   }
+   h2{
+    font-size: 1.6em;
+   }
+   h3{
+       font-size: 1.4em;
+   }
+   h4{
+       font-size: 1.2em;
+   }
+   .img-columna{
+        width:100%;
+        height:100%;
+        padding-left: 0;
+    }
+    #columna{
+        display: flex;
+        flex-flow: column;
+    }
+   .col-item{
+       display: flex;
+       gap:20px;
+       align-items:center;
+       justify-content: center;
+
+   }
+   
+   .noticia{
+       display: flex;
+
+       flex-flow: column;
+   }
+    #navbar{
+        display: flex;
+        justify-content:center;
+    }
+    ul{
+        padding-left: 0;
+    }
+    main{
+        display: flex;
+        flex-flow:column;
+    }
+    #portada{
+        display: flex;
+        flex-flow: column;
+    }
+    #noticias{
+        display: flex;
+        flex-flow: column;
+    }
+}
+@media (max-width:360px){
+    h1{
+        font-size: 2em;
+    }
+    h2{
+     font-size: 1.6em;
+    }
+    h3{
+        font-size: 1.4em;
+    }
+    h4{
+        font-size: 1.2em;
+    }
+    .img-columna{
+         width:100%;
+         height:100%;
+     }
+     #columna{
+         display: flex;
+         flex-flow: column;
+     }
+    
+     .col-item{
+        display: flex;
+        gap:20px;
+        align-items:center;
+        justify-content: center;
+ 
+    }
+    
+     #navbar{
+         display: flex;
+         justify-content:center;
+     }
+     ul{
+         padding-left: 0;
+     }
+     main{
+         display: flex;
+         flex-flow:column;
+     }
+     #portada{
+         display: flex;
+         flex-flow: column;
+     }
+     #noticias{
+         display: flex;
+         flex-flow: column;
+     }
+ }

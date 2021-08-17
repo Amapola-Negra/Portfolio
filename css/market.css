@@ -1,0 +1,1076 @@
+/*1)_______________PRELIMINARES________________________*/
+body{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 2em auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color:#fff; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+   
+}
+/*_______________________________HEADINGS______________________________*/
+h1{
+
+    text-shadow: -1px 0 rgb(233, 238, 233), 1px 0 rgb(233, 236, 207), 0 1px rgb(237, 240, 216), 0 -1px rgb(223, 243, 223);
+    font-size: 3em;
+    font-weight: 700;
+    color: rgba(226, 26, 159, 0.671);
+
+}
+#welcome{
+    padding-top: 25px;
+}
+h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+h3{
+    font-size: 2.3em;
+    color: rgba(0, 0, 0, 0.432);
+    font-weight: 700;
+    text-align: center;
+}
+
+p{
+    font-size: 1em;
+    text-align: center;
+}
+.line{
+    width: 400px;
+    height: 3px;
+    background-color: rgba(226, 26, 159, 0.671);
+}
+/*____________________IMAGES____________________________*/
+img{
+    max-width: 100%;
+    max-height: auto;
+}
+.reason-img{
+    max-width: 80%;
+}
+.featured-image{
+    max-width: 80%;
+}
+
+/*2)___________________________________SECTIONS____________________*/
+
+
+#home{
+    display: flex;
+}
+/*________________CABECERA___________________*/
+header{
+
+    background-color: #000; 
+    padding:20px;
+    position:sticky;
+    top: 0;
+}
+
+
+/*_______________________BARRA DE NAVEGACIÓN__________________________*/
+#navbar{
+    background-color: rgba(94, 194, 169, 0.938);
+    padding: 7px;
+    
+}
+#menu{
+    padding-left: 250px;
+}
+
+ul li{
+    display:inline-block;
+    
+}
+
+a{
+    text-decoration: none;
+    padding: 6px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+a:hover{
+    background-color: #000;
+    border-radius: 5px;
+}
+/*____________________________HOME__________________________________*/
+
+#home{
+
+    text-align: center;
+
+    margin:50px;
+}
+#reasons{
+    
+    display: flex;
+   padding: 50px;
+    padding-bottom:174px;
+    
+}
+#reason-items{
+    display: flex;
+}
+.reason-item{
+    background-color:rgba(238, 237, 226, 0.863);
+    margin:15px;
+    padding:15px;
+    border-radius: 15px;
+}
+#reason-text{
+    background-color: rgba(0, 139, 104, 0.37);
+    color: rgba(226, 26, 159, 0.671);
+    font-size: 3.5em;
+    margin:15px;
+    padding:15px;
+    border-radius: 15px;
+}
+.reason-caption{
+    font-size:2em;
+}
+/*_____________________________________________SHOP__________________________*/
+#featured-background{
+     background-color:rgba(238, 237, 226, 0.863);
+}
+#featured{
+    display: flex;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+   
+    padding:20px;
+   
+}
+.featured-product{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    background-color:#fff;
+    margin:40px;
+    
+    padding:15px;
+    border-radius: 15px;
+}
+#shop-products{
+ 
+    display: flex;
+   padding-top: 55px;
+    padding-bottom:154px;
+    margin-left: 0;
+    
+   
+}
+.product-item{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    background-color:rgba(238, 237, 226, 0.863);
+    margin:15px;
+    padding:15px;
+    border-radius: 15px;
+}
+.button{
+    padding: 10px;
+    background-color: rgb(0, 139, 104);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.16), 0 6px 6px rgba(0,0,0,0.20);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+
+
+}
+.button:hover{
+    background-color: rgb(9, 88, 69);
+}
+/*_________________________________ACCOUNT____________________________________________*/
+#account{
+    display: flex;
+    gap: 60px;
+    padding-top: 55px;
+ 
+    padding-bottom:154px;
+    align-content: center;
+
+    justify-content: center;
+    text-align: left;
+}
+.form-account{
+    display: block;
+   
+}
+.form-label{
+    padding:2px;
+    padding-right:0;
+    font-size: 1em;
+
+}
+
+.form-input-account{
+    margin:2.5px;
+    padding: 4px;
+    background-color: rgba(139, 0, 81, 0.089);
+
+}
+
+.form-button{
+    padding:15px;
+    margin: 6px;
+    margin-top: 15px;
+   width: 100%;
+   background-color:rgb(129, 16, 91);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.16), 0 6px 6px rgba(0,0,0,0.20);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+   cursor: pointer;
+
+}
+
+.form-button:hover{
+    background-color:rgb(90, 17, 66);
+}
+#new-account{
+    padding: 30px;
+    background-color:rgb(241, 231, 188);
+    background-color:rgba(238, 237, 226, 0.863);
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#old-account{
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+/*_________________________________________CONTACT______________________________*/
+#contact{
+    
+
+    display: flex;
+    gap: 60px;
+    
+    padding-top: 90px;
+    padding-bottom:90px;
+    align-content: center;
+   
+    justify-content: center;
+   
+    
+}
+.contact-form{
+    background-color:rgba(238, 237, 226, 0.863);
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding:30px;
+    border-radius: 15px;
+}
+.form-label-contact{
+    padding:5px;
+    padding-right:0;
+    text-align: center;
+    font-size: 1em;
+
+}
+.form-input-contact{
+    margin:12px;
+    margin-right: 0;
+    padding: 6px;
+    width: 450px;
+    font-size: 1em;
+    background-color: rgba(139, 0, 81, 0.089);
+    color:rgb(90, 17, 66);
+
+
+}
+.form-button-reset{
+    padding:15px;
+    margin: 6px;
+    margin-top: 15px;
+   width: 100%;
+   
+    box-shadow: 0 10px 20px rgba(0,0,0,0.16), 0 6px 6px rgba(0,0,0,0.20);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+   cursor: pointer;
+    background-color: #000;
+}
+
+textarea{
+
+    width: 450px;
+    height: 213px;
+}
+
+/*_________________________________MENÚ LEGAL____________________________*/
+#legal{
+   
+    align-content: center;
+    padding: 10px;
+    text-align: center;
+    color: rgb(9, 88, 69);
+    background-color: rgba(0, 139, 104, 0.37);
+}
+/*__________________________________FOOTER_______________________________*/
+footer{
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding:20px;
+}
+
+/*3) ________________RESPONSIVE DESIGN___________________________________*/
+@media (max-width:800px) {
+    h1{
+        font-size: 2em;
+    }
+   a{
+       font-size: 1em;
+   }
+    .line{
+        width: 200px;
+    }
+   
+    #menu{
+        padding-left: 0;
+        margin-left: 215px;
+
+    }
+    ul li{
+        display:inline-block;
+     
+        
+    }
+    
+    #welcome{
+        font-size: 2.8em;
+        margin-top: 8px;
+    }
+
+    #home{
+       display: flex;
+       flex-flow: column;
+       margin: 5px;
+    }
+    #reasons{
+    
+        display: flex;
+        flex-flow: column;
+    
+       padding: 20px;
+        padding-bottom:50px;
+        
+    }
+    
+    #reason-text{
+        background-color: rgba(0, 139, 104, 0.37);
+        color: rgba(226, 26, 159, 0.671);
+        font-size: 3.2em;
+        margin:15px;
+        padding:15px;
+        border-radius: 15px;
+    }
+    .reason-img{
+        width:100%;
+    }
+    .reason-caption{
+        font-size:2em;
+    }
+   
+    #featured{
+        display: flex;
+    
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+       
+    }
+    .featured-product{
+        margin: 5px;
+    }
+    .featured-image{
+        width:100%;
+    }
+    #shop{
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 0;
+        
+    }
+    #shop-products{
+        display: grid;
+        grid-template-areas: "mouse mobile" "fan cleaner" "micro dryer";
+    }
+    #mouse{
+        grid-area: mouse;
+    }
+    #mobile{
+        grid-area: mobile;
+    }
+    #fan{
+        grid-area: fan;
+    }
+    #cleaner{
+        grid-area: cleaner;
+    }
+    #micro{
+        grid-area: micro;
+    }
+    #dryer{
+        grid-area: dryer;
+    }
+    #account{
+        margin-top: 5px;
+        padding-top: 0;
+        display: flex;
+        flex-flow: column;
+        
+        font-size: 1.1em;
+    }
+    .form-account{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    #contact{
+        display: flex;
+        flex-flow: column;
+    }
+    .contact-form{
+        display: flex;
+        flex-flow: row;
+    }
+    textarea{
+        width: 300px;
+    }
+    .form-input-contact{
+        margin:2.5px;
+        padding: 6px;
+        width: 300px;
+       
+        background-color: rgba(139, 0, 81, 0.089);
+        color:rgb(90, 17, 66);
+    
+    }
+    #menu-legal{
+        margin-left: 0px;
+        padding:0;
+    }
+    
+}
+@media (max-width:768px) {
+    h1{
+        font-size: 2em;
+    }
+   a{
+       font-size: 1em;
+   }
+    .line{
+        width: 200px;
+    }
+   
+    #menu{
+        padding-left: 0;
+        margin-left: 215px;
+    }
+    ul li{
+        display:inline-block;
+     
+        
+    }
+    
+    #welcome{
+        font-size: 2.8em;
+        margin-top: 8px;
+    }
+
+    #home{
+       display: flex;
+       flex-flow: column;
+       margin: 5px;
+    }
+    #reasons{
+    
+        display: flex;
+        flex-flow: column;
+    
+       padding: 20px;
+        padding-bottom:50px;
+        
+    }
+    
+    #reason-text{
+        background-color: rgba(0, 139, 104, 0.37);
+        color: rgba(226, 26, 159, 0.671);
+        font-size: 3.2em;
+        margin:15px;
+        padding:15px;
+        border-radius: 15px;
+    }
+    .reason-img{
+        width:100%;
+    }
+    .reason-caption{
+        font-size:2em;
+    }
+   
+    #featured{
+        display: flex;
+    
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+       
+    }
+    .featured-product{
+        margin: 5px;
+    }
+    .featured-image{
+        width:100%;
+    }
+    #shop{
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 0;
+        
+    }
+    #shop-products{
+        display: grid;
+        grid-template-areas: "mouse mobile" "fan cleaner" "micro dryer";
+    }
+    #mouse{
+        grid-area: mouse;
+    }
+    #mobile{
+        grid-area: mobile;
+    }
+    #fan{
+        grid-area: fan;
+    }
+    #cleaner{
+        grid-area: cleaner;
+    }
+    #micro{
+        grid-area: micro;
+    }
+    #dryer{
+        grid-area: dryer;
+    }
+    #account{
+        margin-top: 5px;
+        padding-top: 0;
+        display: flex;
+        flex-flow: column;
+        
+        font-size: 1.1em;
+    }
+    .form-account{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    #contact{
+        display: flex;
+        flex-flow: column;
+    }
+    .contact-form{
+        display: flex;
+        flex-flow: row;
+    }
+    textarea{
+        width: 300px;
+    }
+    .form-input-contact{
+        margin:2.5px;
+        padding: 6px;
+        width: 300px;
+       
+        background-color: rgba(139, 0, 81, 0.089);
+        color:rgb(90, 17, 66);
+    
+    }
+    #menu-legal{
+        margin-left: 0px;
+        padding:0;
+    }
+    
+}
+@media (max-width:414px) {
+    h1{
+        font-size: 2em;
+    }
+   a{
+       font-size: 1em;
+   }
+    .line{
+        width: 200px;
+    }
+   
+    #menu{
+        padding-left: 0;
+    }
+    ul li{
+        display:inline-block;
+     
+        
+    }
+    #welcome{
+        font-size: 2.8em;
+        margin-top: 8px;
+    }
+
+    #home{
+       display: flex;
+       flex-flow: column;
+       margin: 5px;
+    }
+    #reasons{
+    
+        display: flex;
+        flex-flow: column;
+    
+       padding: 20px;
+        padding-bottom:50px;
+        
+    }
+    
+    #reason-text{
+        background-color: rgba(0, 139, 104, 0.37);
+        color: rgba(226, 26, 159, 0.671);
+        font-size: 3.2em;
+        margin:15px;
+        padding:15px;
+        border-radius: 15px;
+    }
+    .reason-caption{
+        font-size:2em;
+    }
+   
+    #featured{
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+       
+        padding:20px;
+       
+    }
+    #shop{
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 0;
+        
+    }
+    #shop-products{
+        display: flex;
+        flex-flow: column;
+    }
+    #account{
+        
+        margin:20px;
+        margin-top: 5px;
+        padding-top: 0;
+        display: flex;
+        flex-flow: column;
+        font-size: 1.2em;
+    }
+    #form-account{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact{
+        display: flex;
+        flex-flow: column;
+    }
+    .contact-form{
+        display: flex;
+        flex-flow: column;
+    }
+    textarea{
+        width: 300px;
+    }
+    .form-input-contact{
+        margin:2.5px;
+        padding: 6px;
+        width: 300px;
+       
+        background-color: rgba(139, 0, 81, 0.089);
+        color:rgb(90, 17, 66);
+    
+    
+    }
+    
+}
+@media (max-width:414px) {
+    h1{
+        font-size: 2em;
+    }
+   a{
+       font-size: 1em;
+   }
+    .line{
+        width: 200px;
+    }
+   
+    #menu{
+        padding-left: 0;
+         margin-left: 35px;
+    }
+    
+    ul li{
+        display:inline-block;
+     
+        
+    }
+    #welcome{
+        font-size: 2.8em;
+        margin-top: 8px;
+    }
+
+    #home{
+       display: flex;
+       flex-flow: column;
+       margin: 5px;
+    }
+    #reasons{
+    
+        display: flex;
+        flex-flow: column;
+    
+       padding: 20px;
+        padding-bottom:50px;
+        
+    }
+    #reason-items{
+        display: flex;
+        flex-flow: column;
+    }
+    
+    #reason-text{
+        background-color: rgba(0, 139, 104, 0.37);
+        color: rgba(226, 26, 159, 0.671);
+        font-size: 3.2em;
+        margin:15px;
+        padding:15px;
+        border-radius: 15px;
+    }
+    .reason-caption{
+        font-size:2em;
+    }
+   
+    #featured{
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+       
+        padding:20px;
+       
+    }
+    #shop{
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 0;
+        
+    }
+    #shop-products{
+        display: flex;
+        flex-flow: column;
+    }
+    #account{
+        margin-top: 5px;
+        padding-top: 0;
+        display: flex;
+        flex-flow: column;
+        font-size: 1.2em;
+    }
+    #form-account{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact{
+        display: flex;
+        flex-flow: column;
+    }
+    .contact-form{
+        display: flex;
+        flex-flow: column;
+    }
+    textarea{
+        width: 300px;
+    }
+    .form-input-contact{
+        margin:2.5px;
+        padding: 6px;
+        width: 300px;
+       
+        background-color: rgba(139, 0, 81, 0.089);
+        color:rgb(90, 17, 66);
+    
+    
+    }
+    
+}
+@media (max-width:375px) {
+    h1{
+        font-size: 2em;
+    }
+   a{
+       font-size: 1em;
+   }
+    .line{
+        width: 200px;
+    }
+   
+    #menu{
+        padding-left: 0;
+         margin-left: 15px;
+    }
+    
+    ul li{
+        display:inline-block;
+     
+        
+    }
+    #welcome{
+        font-size: 2.8em;
+        margin-top: 8px;
+    }
+
+    #home{
+       display: flex;
+       flex-flow: column;
+       margin: 5px;
+    }
+    #reasons{
+    
+        display: flex;
+        flex-flow: column;
+    
+       padding: 20px;
+        padding-bottom:50px;
+        
+    }
+    #reason-items{
+        display: flex;
+        flex-flow: column;
+    }
+    
+    #reason-text{
+        background-color: rgba(0, 139, 104, 0.37);
+        color: rgba(226, 26, 159, 0.671);
+        font-size: 3.2em;
+        margin:15px;
+        padding:15px;
+        border-radius: 15px;
+    }
+    .reason-caption{
+        font-size:2em;
+    }
+   
+    #featured{
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+       
+        padding:20px;
+       
+    }
+    #shop{
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 0;
+        
+    }
+    #shop-products{
+        display: flex;
+        flex-flow: column;
+    }
+    #account{
+        margin-top: 5px;
+        padding-top: 0;
+        display: flex;
+        flex-flow: column;
+        font-size: 1.2em;
+    }
+    #form-account{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact{
+        display: flex;
+        flex-flow: column;
+    }
+    .contact-form{
+        display: flex;
+        flex-flow: column;
+    }
+    textarea{
+        width: 300px;
+    }
+    .form-input-contact{
+        margin:2.5px;
+        padding: 6px;
+        width: 300px;
+       
+        background-color: rgba(139, 0, 81, 0.089);
+        color:rgb(90, 17, 66);
+    
+    
+    }
+    
+}
+@media (max-width:360px) {
+    h1{
+        font-size: 2em;
+    }
+   a{
+       font-size: 1em;
+   }
+    .line{
+        width: 200px;
+    }
+   
+    #menu{
+        padding-left: 0;
+        margin-left: 10px;
+    }
+    
+    ul li{
+        display:inline-block;
+     
+        
+    }
+    #welcome{
+        font-size: 2.8em;
+        margin-top: 8px;
+    }
+
+    #home{
+       display: flex;
+       flex-flow: column;
+       margin: 5px;
+    }
+    #reasons{
+    
+        display: flex;
+        flex-flow: column;
+    
+       padding: 20px;
+        padding-bottom:50px;
+        
+    }
+    #reason-items{
+        display: flex;
+        flex-flow: column;
+    }
+    
+    #reason-text{
+        background-color: rgba(0, 139, 104, 0.37);
+        color: rgba(226, 26, 159, 0.671);
+        font-size: 3.2em;
+        margin:15px;
+        padding:15px;
+        border-radius: 15px;
+    }
+    .reason-caption{
+        font-size:2em;
+    }
+   
+    #featured{
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+       
+        padding:20px;
+       
+    }
+    #shop{
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 0;
+        
+    }
+    #shop-products{
+        display: flex;
+        flex-flow: column;
+    }
+    #account{
+        margin-top: 5px;
+        padding-top: 0;
+        display: flex;
+        flex-flow: column;
+        font-size: 1.1em;
+    }
+    #form-account{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact{
+        display: flex;
+        flex-flow: column;
+    }
+    .contact-form{
+        display: flex;
+        flex-flow: column;
+    }
+    textarea{
+        width: 300px;
+    }
+    .form-input-contact{
+        margin:2.5px;
+        padding: 6px;
+        width: 300px;
+       
+        background-color: rgba(139, 0, 81, 0.089);
+        color:rgb(90, 17, 66);
+    
+    
+    }
+    
+    #menu-legal{
+        margin-left: 0px;
+        padding:0;
+    }
+    
+}
+
+
+
+
