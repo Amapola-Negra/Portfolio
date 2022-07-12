@@ -96,10 +96,10 @@ img{
     justify-content: center;
 }
 .project-real{
-  border: 17px solid black;
+  border: 11px solid black;
   width: 300px;
   height: 300px;
-  object-fit: cover;
+  content-fit: cover;
 }
  
 /*profile*/
