@@ -95,8 +95,8 @@ img{
     align-items: center;
     justify-content: center;
 }
-.project-real img{
-  border: 5px solid black;
+.project-real{
+  border: 8px solid black;
 }
  
 /*profile*/
