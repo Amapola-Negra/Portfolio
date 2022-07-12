@@ -95,6 +95,10 @@ img{
     align-items: center;
     justify-content: center;
 }
+.project-real img{
+  border: 5px solid black;
+}
+ 
 /*profile*/
 #profile{
     padding: 20px;
