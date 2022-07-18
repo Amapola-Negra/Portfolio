@@ -1,6 +1,11 @@
 # Portfolio
-This is first of all a sample, but in a future it would be my portfolio
+This portfolio started as a project for FreeCodeCamp, but now it's my portfolio 
 <h2>Portfolio</h2>
-<a>
+<p align="center">
   <img src="images/PARA-PORTFOLIO.PNG">
-</a>
+</p>
+
+
+<h2>My files</h2>
+Here you can find all my files.
+<a href="https://github.com/Amapola-Negra/MAMEN-COLLECTION-REPO">See my files</a>
