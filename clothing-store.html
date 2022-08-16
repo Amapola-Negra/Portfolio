@@ -1,141 +1,124 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="images/icono-dress.png"/>
-    <link rel="stylesheet" href="css/clothing-store.css">
-    <title>Clothing store</title>
-</head>
-<body>
-    <header id="header">
-        <h1>Old as New</h1>
-        
-        <!--_________________NAV BAR_______________________________-->
-        <nav id="navbar">
-            <ul id="menu">
-                <li id="nav-home"><a href="#home" class="nav-item" >Home</a></li>
-                <li id="nav-buy"><a href="#buy" class="nav-item" >Buy</a></li>
-                <li id="nav-share"><a href="#share" class="nav-item" >Share</a></li>
-                <li id="nav-account"><a href="#account" class="nav-item" >Account</a></li>
-                <li id="nav-contact"><a href="#contact" class="nav-item" >Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!--__________________HOME__________________________-->
-        <h2>Welcome</h2>
-        <article id="home">
-            <div id="home-texts">
-                <div id="home-text-1" class="home-text-item">
-                    <p> Feel the new sensation!!</p>
-                </div>
-                <div id="home-text-2" class="home-text-item">
-                   
-                    <p>  What you no longer need can be of interest to others.</p>
-                </div>
-                <div id="home-text-3" class="home-text-item">
-
-                    <p> Old for you but new for other people.</p>
-                </div>
-            </div>
-                <div id="home-image">
-                    <img src="images/reciclado.png" alt="">
-                </div>
-        </article>
-        <!--__________________BUY____________________________-->
-        <h2>Buy</h2>
-        <article id="buy">
-            <div id="buy-image">
-                            <img src="images/portada-tienda.png" alt="">
-            </div>
-            <div id="buy-text">
-
-                <p> Contribute to the recycling process.</p>
-                <p>Browse our catalog and find the garment you were looking for.</p>
-            </div>
-        
-            
-            
-        </article>
-        <!--___________________SHARE_________________________-->
-        <h2>Share</h2>
-        <article id="share">
-            <div id="share-text">
-                <p>Give your clothes a new life.</p>
-                <p>Upload a photo of the garment you want to sell and we will take care of the rest.</p>
-            </div>
-        
-            <div id="share-image">
-                <img src="images/foto-ropa.png" alt="">
-            </div>
-            
-        </article>
-        <!--__________________ACCOUNT_________________________-->
-        <h2>Account</h2>
-        <article id="account">
-            <div class="form-account">
-                <h3>Login</h3>
-            <p>Yo need to be logued in order to make a purchase.</p>
-            <p>Please, logue in.</p>
-            <form method="post" action="#" >
-                <label class="form-label">User*: </label><input type="text" name="nombre" value="" class="form-input-account" required/>
-                <label class="form-label">Password*: </label><input type="password" name="nombre" value="" class="form-input-account" required/>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="images/icono-dress.png"/>
+        <link rel="stylesheet" href="css/clothing-store.css">
+        <title>Clothing store</title>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <h1>Old as New</h1>
                 
-                <input type="submit" value="Login" class="form-button"/>
-            </form>
+                <!--_________________NAV BAR_______________________________-->
+                <nav id="navbar">
+                    <ul id="menu">
+                        <li id="nav-home"><a href="#home" class="nav-item" >Home</a></li>
+                        <li id="nav-buy"><a href="#buy" class="nav-item" >Buy</a></li>
+                        <li id="nav-share"><a href="#share" class="nav-item" >Share</a></li>
+                        <li id="nav-account"><a href="#account" class="nav-item" >Account</a></li>
+                        <li id="nav-contact"><a href="#contact" class="nav-item" >Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="form-account">
-            <h3>Don't have an account yet?</h3>
-            <p>Create an account in just a second.</p>
-            <p>Introduce a valid email and you'll recive your password.</p>			
-			<form action="">
-                <label class="form-label">Email*: </label><input type="email" class="form-input-account" required><br>
-                <input type="submit" value="Register" class="form-button"/><br>
-            </form>
-			
-            </div>
-            
-        </article>
-        <!--__________________CONTACT_________________________-->
-        <h2>Contact</h2>
-        <article id="contact">
-            
-            <div id="form-contact">
-               <p>Leave a message. I'll get back to you as soon as possible.</p> 
-                <form method="post" action="#" class="contact-form">
-                    <div>
-                        <input type="text" name="nombre" value="Name*" class="form-input-contact" required/><br>
-                    <input type="text" name="apellido" value="Surname*" class="form-input-contact" required/><br>
-                    <input type="email" value="Email*" class="form-input-contact"required><br>
-                    <input type="tel" value="Phone" class="form-input-contact"><br>
-                    <hr class="punteada">
-                    <label class="form-label label-2">Date</label><br><input type="date" class="form-input-contact"><br>
-                    
+        </header>
+        <main>
+            <!--__________________HOME__________________________-->
+            <h2>Welcome</h2>
+            <article id="home">
+                <div id="home-texts">
+                    <div id="home-text-1" class="home-text-item">
+                        <p> Feel the new sensation!!</p>
                     </div>
-                    
-                    <div>			
-                    
-                    
-                    <label class="form-label-contact">Leave a comment</label><br><br>
-                    <textarea name="comentario" value="Leave a comment" maxlength="600" class="form-input-contact" cols="60"></textarea>
-                    
-                   
-                    <div id="boton-contacto">
-                        <input type="reset" value="Reset" class="form-button-reset"/>
-                         <input type="submit" value="Submit" class="form-button"/>
+                    <div id="home-text-2" class="home-text-item">
+                        <p>  What you no longer need can be of interest to others.</p>
                     </div>
+                    <div id="home-text-3" class="home-text-item">
+                        <p> Old for you but new for other people.</p>
                     </div>
-                </form>
-                
-            </div>
-            
-        </article>
+                </div>
+                    <div id="home-image">
+                        <img src="images/reciclado.png" alt="">
+                    </div>
+            </article>
+            <!--__________________BUY____________________________-->
+            <h2>Buy</h2>
+            <article id="buy">
+                <div id="buy-image">
+                    <img src="images/portada-tienda.png" alt="">
+                </div>
+                <div id="buy-text">
+                    <p> Contribute to the recycling process.</p>
+                    <p>Browse our catalog and find the garment you were looking for.</p>
+                </div>
+            </article>
+            <!--___________________SHARE_________________________-->
+            <h2>Share</h2>
+            <article id="share">
+                <div id="share-text">
+                    <p>Give your clothes a new life.</p>
+                    <p>Upload a photo of the garment you want to sell and we will take care of the rest.</p>
+                </div>
+                <div id="share-image">
+                    <img src="images/foto-ropa.png" alt="">
+                </div>
+            </article>
+            <!--__________________ACCOUNT_________________________-->
+            <h2>Account</h2>
+            <article id="account">
+                <div id="group-account">
+                    <div class="form-account">
+                        <h3>Login</h3>
+                        <p>Yo need to be logued in order to make a purchase.</p>
+                        <p>Please, logue in.</p>
+                        <form method="post" action="#" >
+                            <label class="form-label">User*: </label><input type="text" name="nombre" value="" class="form-input-account" required/>
+                            <label class="form-label">Password*: </label><input type="password" name="nombre" value="" class="form-input-account" required/>
+                            <input type="submit" value="Login" class="form-button"/>
+                        </form>
+                    </div>
+                    <div class="form-account form-account-register">
+                        <h3>Don't have an account yet?</h3>
+                        <p>Create an account in just a second.</p>
+                        <p>Introduce a valid email and you'll recive your password.</p>			
+                        <form action="">
+                            <label class="form-label">Email*: </label><input type="email" class="form-input-account" required><br>
+                            <input type="submit" value="Register" class="form-button"/><br>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <!--__________________CONTACT_________________________-->
+            <h2>Contact</h2>
+            <article id="contact">
+                <div id="form-contact">
+                    <p>Leave a message. I'll get back to you as soon as possible.</p> 
+                    <form method="post" action="#" class="contact-form">
+                        <div>
+                            <input type="text" name="nombre" value="Name*" class="form-input-contact" required/><br>
+                            <input type="text" name="apellido" value="Surname*" class="form-input-contact" required/><br>
+                            <input type="email" value="Email*" class="form-input-contact"required><br>
+                            <input type="tel" value="Phone" class="form-input-contact"><br>
+                            <hr class="punteada">
+                            <label class="form-label label-2">Date<br><input type="date" class="form-input-contact"><br></label>
+                        </div>
 
-    </main>
-    
-</body>
-<footer>
-    <p>&COPY; Mamen 2021</p>
-</footer>
+                        <div>			
+                            <label class="form-label-contact">Leave a comment<br><br>
+                            <textarea name="comentario" value="Leave a comment" maxlength="600" class="form-input-contact" cols="60"></textarea></label>
+                            <div id="boton-contacto">
+                                <input type="reset" value="Reset" class="form-button-reset"/>
+                                <input type="submit" value="Submit" class="form-button"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </main>
+    </body>
+    <footer>
+        <p>&COPY; Mamen 2021</p>
+    </footer>
 </html>
