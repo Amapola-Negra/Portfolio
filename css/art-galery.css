@@ -2,15 +2,11 @@ body{
     box-sizing: border-box;
     height: 100%;
     width: 90%;
-    margin: 2em auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 auto;
     background-color: #000;
     font-family:'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
     color: #fff;
     text-align: center;
-    
-   
 }
 img{
     max-width: 100%;
@@ -23,57 +19,46 @@ h1{
 /*_________________________________DISPOSITION________________________________*/
 #galery{
     display: grid;
-   grid-template-columns: auto 350px 350px 350px auto;
-   grid-template-areas: ". img-1 img-2 img-3 ."
+    grid-template-columns: auto 350px 350px 350px auto;
+    grid-template-areas: ". img-1 img-2 img-3 ."
                         ". img-4 img-5 img-6 .";
-
-    
 
 }
 #img-1{
     grid-area: img-1;
-
 }
 #img-2{
     grid-area: img-2;
-    
 }
-
 #img-3{
     grid-area: img-3;
-        
 }
 #img-4{
     grid-area: img-4;
-    
 }
 #img-5{
     grid-area: img-5;
-    
 }
 #img-6{
     grid-area: img-6;
-    
 }
 .picture{
     border-radius: 20px;
 }
 .picture:hover{
     box-shadow: 4px 4px 30px #e8acf0f5;
-    
     border-radius: 20px;
-  
 }
 footer{
     padding: 3vw;
     padding-bottom: 1vw;
 }
 /*___________________________RESPONSIVE DESIGN_________________________*/
-@media (max-width:800px){
+@media (max-width: 800px){
     #galery{
         display: grid;
-   grid-template-columns: auto 350px 350px auto;
-   grid-template-areas: ". img-1 img-2 ."
+        grid-template-columns: auto 350px 350px auto;
+        grid-template-areas: ". img-1 img-2 ."
                         ". img-3 img-4 ."
                         ". img-5 img-6 .";
 
@@ -88,8 +73,8 @@ footer{
 @media (max-width:768px){
     #galery{
         display: grid;
-   grid-template-columns: auto 350px 350px auto;
-   grid-template-areas: ". img-1 img-2 ."
+        grid-template-columns: auto 350px 350px auto;
+        grid-template-areas: ". img-1 img-2 ."
                         ". img-3 img-4 ."
                         ". img-5 img-6 .";
 
@@ -98,27 +83,11 @@ footer{
         padding-top: 150px;
     }
 }
-@media (max-width:414px){
-    #galery{
-        display:flex;
-        flex-flow: column;
-    }
-}
-@media (max-width:375px){
+@media (max-width: 600px){
     #galery{
         display:flex;
         flex-flow: column;
     }
 }
 
-@media (max-width:360px) {
-    #galery{
-        display:flex;
-        flex-flow: column;
-    }
-    .img-item{
-        padding-top: 200px;
-    }
-    
-}
 
