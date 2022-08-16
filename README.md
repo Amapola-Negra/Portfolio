@@ -1,5 +1,5 @@
 # Portfolio
-This portfolio started as a project for FreeCodeCamp, but now it's my portfolio 
+This portfolio started as a project for FreeCodeCamp, but now it's my imaginary portfolio. A portfolio devoted to the imagination 
 <h2>Portfolio</h2>
 <p align="center">
   <img src="images/PARA-PORTFOLIO.PNG">
